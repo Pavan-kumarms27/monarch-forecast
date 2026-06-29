@@ -6,7 +6,7 @@ Monarch Forecast is a modern and responsive weather dashboard built with **React
 
 **Visit the website here:**
 
-👉 **https://your-live-demo-link.vercel.app**
+👉 **https://monarch-forecast.vercel.app/**
 
 ---
 
@@ -47,7 +47,7 @@ Monarch Forecast is a modern and responsive weather dashboard built with **React
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/monarch-forecast.git
+git clone https://github.com/Pavan-kumarms27/monarch-forecast.git
 ```
 
 Navigate into the project
