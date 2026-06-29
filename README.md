@@ -1,16 +1,99 @@
-# React + Vite
+# 🌤️ Monarch Forecast
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Monarch Forecast is a modern and responsive weather dashboard built with **React** that delivers real-time weather updates with a clean glassmorphism interface. The application features a beautiful Light/Dark theme, hourly temperature visualization, detailed weather highlights, and a seamless experience across desktop, tablet, and mobile devices.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Visit the website here:**
 
-## React Compiler
+👉 **https://your-live-demo-link.vercel.app**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* 🌍 Search weather for any city worldwide
+* 🌡️ Real-time weather conditions
+* 📈 Interactive hourly temperature chart
+* ⏰ 8-hour weather forecast
+* 💨 Weather highlights
+
+  * Humidity
+  * Wind Speed
+  * Atmospheric Pressure
+  * Visibility
+  * Feels Like Temperature
+* 🌙 Light & Dark Mode
+* 🎨 Modern Glassmorphism UI
+* 📱 Fully Responsive Design
+* ⚡ Fast and optimized React application
+
+---
+
+## 🛠️ Built With
+
+* React.js
+* JavaScript (ES6+)
+* CSS3
+* Chart.js
+* React Chart.js 2
+* OpenWeatherMap API
+* Vite
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/monarch-forecast.git
+```
+
+Navigate into the project
+
+```bash
+cd monarch-forecast
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root
+
+```env
+VITE_WEATHER_API_KEY=YOUR_API_KEY
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── App.jsx
+├── main.jsx
+└── App.css
+```
+
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to fork the repository and submit a pull request.
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub!
