@@ -1,0 +1,7 @@
+.WeatherMap {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  color: var(--text);
+  min-height: 250px;
+}

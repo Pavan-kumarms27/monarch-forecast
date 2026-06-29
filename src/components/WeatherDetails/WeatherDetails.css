@@ -1,0 +1,47 @@
+.weather-details {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.weather-details h2 {
+  color: var(--text);
+  margin-bottom: 25px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.detail-card {
+  background: var(--bg);
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+.detail-icon {
+  font-size: 55px;
+  color: #4f9dff;
+  margin-bottom: 15px;
+}
+
+.detail-card span {
+  display: block;
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.detail-card h3 {
+  font-size: 22px;
+  color: var(--text);
+}

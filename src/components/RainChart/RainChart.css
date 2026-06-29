@@ -1,0 +1,228 @@
+/* =========================
+   PANEL CONTAINERS
+========================= */
+
+.temperature-chart,
+.other,
+.highlights-panel {
+  width: 100%;
+
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid var(--glass-border);
+
+  border-radius: 24px;
+
+  padding: clamp(18px, 3vw, 28px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.temperature-chart h2,
+.other h2,
+.highlights-panel h2 {
+  color: var(--text);
+
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   HOURLY LIST
+========================= */
+
+.hourly-list {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(90px, 1fr));
+  gap: 18px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.hourly-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   HOUR CARD
+========================= */
+
+.hour-card {
+  width: 100%;
+
+  background: var(--bg);
+
+  border: 1px solid var(--glass-border);
+
+  border-radius: 18px;
+
+  padding: 18px 12px;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.hour-card:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-color: rgba(56, 189, 248, 0.25);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hour-card .time {
+  color: var(--secondary);
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+}
+
+.hour-card img {
+  width: 50px;
+  height: 50px;
+
+  margin: 12px auto;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition: transform 0.3s ease;
+}
+
+.hour-card:hover img {
+  transform: scale(1.1);
+}
+
+.hour-card .temp {
+  color: var(--text);
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+}
+
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media (max-width: 992px) {
+  .temperature-chart,
+  .other,
+  .highlights-panel {
+    padding: 22px;
+  }
+
+  .hour-card {
+    flex: 0 0 90px;
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 768px) {
+  .temperature-chart,
+  .other,
+  .highlights-panel {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .hourly-list {
+    gap: 12px;
+  }
+
+  .hour-card {
+    flex: 0 0 82px;
+    padding: 14px 10px;
+  }
+
+  .hour-card img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hour-card .temp {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+  .temperature-chart,
+  .other,
+  .highlights-panel {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .temperature-chart h2,
+  .other h2,
+  .highlights-panel h2 {
+    font-size: 1.2rem;
+  }
+
+  .hourly-list {
+    gap: 10px;
+  }
+
+  .hour-card {
+    flex: 0 0 76px;
+
+    padding: 12px 8px;
+  }
+
+  .hour-card img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hour-card .time {
+    font-size: 0.75rem;
+  }
+
+  .hour-card .temp {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+  .hour-card {
+    flex: 0 0 68px;
+
+    padding: 10px 6px;
+  }
+
+  .hour-card img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hour-card .temp {
+    font-size: 0.85rem;
+  }
+}
