@@ -14,7 +14,7 @@ import CurrentWeather from "../components/CurrentWeather/CurrentWeather";
 import ForecastCards from "../components/ForecastCards/ForecastCards";
 import RainChart from "../components/RainChart/RainChart";
 import WeatherDetails from "../components/WeatherDetails/WeatherDetails";
-import OtherCities from "../components/other/other";
+import OtherCities from "../components/Other/other";
 
 function Home({ darkMode, setDarkMode }) {
   const [city, setCity] = useState("Bangalore");
